@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Feud Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Team Feud Game</h1>
+    </header>
+
+    <!-- Timer display -->
+    <div class="timer">
+        <span>Time left: <span id="timer">10</span> seconds</span>
+        <button class="timer-button" onclick="startTimer()">Start Timer</button>
+        <button class="timer-button" onclick="resetTimer()">Reset Timer</button>
+    </div>
+
+    <!-- Display Team Scores -->
+    <div class="team-scores">
+        <div>Team A Score: <span id="teamAScore">0</span></div>
+        <div>Team B Score: <span id="teamBScore">0</span></div>
+    </div>
+
+    <!-- Question display -->
+    <div id="question-container"></div>
+
+    <!-- Navigation Buttons -->
+    <button class="nav-button" id="previous-question" onclick="previousQuestion()">Previous Question</button>
+    <button class="nav-button" id="next-question" onclick="nextQuestion()">Next Question</button>
+
+    <!-- Add Score Buttons for Teams -->
+    <div class="team-buttons">
+        <button class="team-button" onclick="addTeamScore('A')">Add to Team A Score</button>
+        <button class="team-button" onclick="addTeamScore('B')">Add to Team B Score</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
